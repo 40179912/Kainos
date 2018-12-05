@@ -1,0 +1,22 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>Login</h1>
+    <p class="lead">
+        Here you can visualise the data of the csv files you've uploaded.
+    </p>
+</div>
+<form>
+    <p>Here you can visualise your csv files as a bar graph.</p>
+    <p>Please enter the name of the csv file.</p>
+    CSV name: <input type="text" name="csv_name1"><br>
+    <p>Please enter the name of the 1st column.</p>
+    CSV name: <input type="text" name="csv_name2"><br>
+    <p>Please enter the name of the 2nd column.</p>
+    CSV name: <input type="text" name="csv_name_merged"><br>
+    <button onclick="own_csv_exists(csv_name);"></button>
+</form>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>Login</h1>
+    <p class="lead">
+        Here is the area where you can download any file that you have uploaded
+    </p>
+</div>
+<form action="">
+    <p>Please enter the name of the csv file you wish to upload.</p>
+    CSV name: <input type="text" name="csvname"><br>
+    File name: <input type="text" name="file_name"><br>
+    <button onclick="download_csv(csvname, file_name)">Enter CSV</button>
+</form>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>Login</h1>
+    <p class="lead">
+        Here is the area where you can enter in either your own csv files
+        or a csv file from a link.
+    </p>
+</div>
+<form>
+    <p>Please enter the name of the csv file you wish to upload.</p>
+    CSV name: <input type="text" name="csv_name"><br>
+    <button onclick="own_csv_exists(csv_name):">Enter CSV</button>
+</form>
+
+{% endblock %}

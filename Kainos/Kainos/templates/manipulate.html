@@ -1,0 +1,26 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>Login</h1>
+    <p class="lead">
+        Here you can manipulate the data of the csv files you've uploaded.
+    </p>
+</div>
+<form>
+    <p>Here you can merge your csv files.</p>
+
+    <p>Please enter the name of the 1st csv file.</p>
+    CSV name: <input type="text" name="csv_name1"><br>
+    
+    <p>Please enter the name of the 2nd csv file.</p>
+    CSV name: <input type="text" name="csv_name2"><br>
+    
+    <p>Please enter the name of the merged csv file.</p>
+    CSV name: <input type="text" name="csv_name_merged"><br>
+    
+    <button onclick="own_csv_exists(csv_name);">Enter CSV</button>
+</form>
+
+{% endblock %}

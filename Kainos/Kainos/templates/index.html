@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>Data X</h1>
+    <p class="lead">Data X is a special system designed to help you with your problems involving
+                    large data. Thanks to this webiste you will be able to take either your own datasets
+                    or a open data dataset and both manipulate them and visualize them.</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Insert dataset</h2>
+        <p>
+            From here you can insert your very own dataset,
+            whether it be from your own computer or one that you found online.
+            This will store your dataset for future use.
+        </p>
+        <p><a class="btn btn-default" a href="{{ url_for('upload') }}">Insert Dataset &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Download dataset</h2>
+        <p>
+            From here you can download any dataset that you've inserted
+            or altered into your system.
+        </p>
+        <p><a class="btn btn-default" a href="{{ url_for('download') }}">Download Dataset &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Alter Dataset</h2>
+        <p>
+            Here you can take the datasets you have provided and alter them in whatever way you see fit.
+            You can change the conents of the dataset, create a new dataset by merging 2 of your datasets
+            together or flatten certain data if you desire.
+        </p>
+        <p><a class="btn btn-default" a href="{{ url_for('manipulate') }}">Manipulate Dataset &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Visualise Dataset</h2>
+        <p>
+            Here you can visualise your dataset into whatever form you desire.
+            If you want to create a graph based on your numbers, you can do so.
+            If you want to put some coordinates on a map you can do so.
+        </p>
+        <p><a class="btn btn-default" a href="{{ url_for('visualise') }}">Visualise Dataset &raquo;</a></p>
+    </div>
+</div>
+
+{% endblock %}
