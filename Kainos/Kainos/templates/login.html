@@ -10,6 +10,18 @@
 </div>
 <p>Please enter your username.</p>
 Login: <input type="text" name="username"><br>
-<button onclick="log_in(username);">Log in</button>
+<button onclick="log_in()">Log in</button>
 </html>
+<script>
+    String usernames = ["Luke", "Zoe"];
 
+    function log_in() {
+        String name = username;
+        for (int i = 0; i++; i < usernames.length) {
+            if (usernames[i] == name) {
+                url_for('home');
+            }
+        }
+    }
+
+</script>
